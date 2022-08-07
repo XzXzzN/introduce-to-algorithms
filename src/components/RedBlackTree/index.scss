@@ -1,0 +1,36 @@
+.red-black-tree {
+	.describe {
+		color: #fff;
+		font-size: 28px;
+		text-align: center;
+	}
+	.add-number {
+		text-align: center;
+		.number {
+			border-radius: 10px;
+			padding: 5px 10px;
+			font-size: 18px;
+			border: none;
+			transition: 0.2s;
+			width: 80%;
+			&:focus {
+				outline: none;
+				// box-shadow: 0 0 10px 1000px rgba($color: #000000, $alpha: 0.5);
+			}
+		}
+	}
+	.add-node {
+		input:not(.number) {
+			border-radius: 10px;
+			padding: 5px 10px;
+			font-size: 18px;
+			border: none;
+			transition: 0.2s;
+			margin: 10px;
+			box-shadow: inset 0 0 5px black;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
