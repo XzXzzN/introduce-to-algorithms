@@ -1,0 +1,18 @@
+@import './mixins/mixins.scss';
+
+@include n(login) {
+	position: relative;
+	.reset-rubik {
+		position: relative;
+		z-index: 1;
+	}
+	.login-box {
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 10;
+		background-color: $--xc-blue;
+		width: 100px;
+		height: 100px;
+	}
+}

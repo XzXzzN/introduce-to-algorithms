@@ -1,0 +1,60 @@
+@import './config.scss';
+
+$--xc-blue: #0d6efd;
+$--xc-indigo: #6610f2;
+$--xc-purple: #6f42c1;
+$--xc-pink: #d63384;
+$--xc-red: #dc3545;
+$--xc-orange: #fd7e14;
+$--xc-yellow: #ffc107;
+$--xc-green: #198754;
+$--xc-teal: #20c997;
+$--xc-cyan: #0dcaf0;
+$--xc-white: #fff;
+$--xc-gray: #6c757d;
+$--xc-gray-dark: #343a40;
+$--xc-gray-100: #f8f9fa;
+$--xc-gray-200: #e9ecef;
+$--xc-gray-300: #dee2e6;
+$--xc-gray-400: #ced4da;
+$--xc-gray-500: #adb5bd;
+$--xc-gray-600: #6c757d;
+$--xc-gray-700: #495057;
+$--xc-gray-800: #343a40;
+$--xc-gray-900: #212529;
+$--xc-primary: #0d6efd;
+$--xc-secondary: #6c757d;
+$--xc-success: #198754;
+$--xc-info: #0dcaf0;
+$--xc-warning: #ffc107;
+$--xc-danger: #dc3545;
+$--xc-light: #f8f9fa;
+$--xc-dark: #212529;
+$--xc-primary-rgb: 13, 110, 253;
+$--xc-secondary-rgb: 108, 117, 125;
+$--xc-success-rgb: 25, 135, 84;
+$--xc-info-rgb: 13, 202, 240;
+$--xc-warning-rgb: 255, 193, 7;
+$--xc-danger-rgb: 220, 53, 69;
+$--xc-light-rgb: 248, 249, 250;
+$--xc-dark-rgb: 33, 37, 41;
+$--xc-white-rgb: 255, 255, 255;
+$--xc-black-rgb: 0, 0, 0;
+$--xc-body-color-rgb: 33, 37, 41;
+$--xc-body-bg-rgb: 255, 255, 255;
+$--xc-font-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto,
+	'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
+	'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$--xc-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+	'Courier New', monospace;
+$--xc-gradient: linear-gradient(
+	180deg,
+	rgba(255, 255, 255, 0.15),
+	rgba(255, 255, 255, 0)
+);
+$--xc-body-font-family: var($--xc-font-sans-serif);
+$--xc-body-font-size: 1rem;
+$--xc-body-font-weight: 400;
+$--xc-body-line-height: 1.5;
+$--xc-body-color: #212529;
+$--xc-body-bg: #fff;

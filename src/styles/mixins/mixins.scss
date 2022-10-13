@@ -1,0 +1,7 @@
+@import '../common/define.scss';
+@mixin n($block) {
+    $B: $namespace + '-' + $block !global;
+    .#{$B} {
+        @content;
+    }
+}

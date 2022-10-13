@@ -1,0 +1,42 @@
+@import './mixins/mixins.scss';
+@include n(header) {
+	background-color: rgb(0, 0, 0);
+	font-family: 'PT Sans', sans-serif;
+	font-size: 13px;
+	height: 40px;
+	padding-left: 40px;
+	margin-right: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	position: relative;
+	justify-content: space-between;
+	width: 100%;
+	.algorithms {
+		margin-right: 0.25rem;
+		font-size: 20px;
+		color: white;
+		margin-left: 5rem;
+		font-style: oblique;
+		.web-path {
+			color: $--xc-red;
+			font-size: 14px;
+			line-height: 1;
+		}
+	}
+	.login-button {
+		color: $--xc-green;
+		font-size: 1rem;
+		padding: 0 0.5rem;
+		margin-left: 0.5rem;
+		border: 2px solid;
+		border-radius: 0.25rem;
+		height: 24px;
+		line-height: 1.5;
+		margin-right: 2rem;
+		.button-box {
+			color: $--xc-green;
+			font-size: 13px;
+		}
+	}
+}

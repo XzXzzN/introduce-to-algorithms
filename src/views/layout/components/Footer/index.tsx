@@ -1,9 +1,11 @@
 import React from 'react';
+import './index.scss';
 
-const loginPath = `${window.location.origin}/login`;
-const Header = () => {
+const loginPath: string = `${window.location.href}/login`;
+
+const Footer = () => {
     return (
-        <nav className='xc-header' id='topbar'>
+        <nav className='header' id='topbar'>
             <span className='algorithms'>
                 XCRACKERS
                 <span className='web-path'>.com</span>
@@ -17,4 +19,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Footer;
