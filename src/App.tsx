@@ -1,3 +1,10 @@
+/*
+ * @Author: Xcracker
+ * @Date: 2022-10-13 22:36:54
+ * @LastEditors: Xcracker
+ * @LastEditTime: 2022-10-14 00:14:54
+ * @Descripttion:
+ */
 import React from 'react';
 import './App.scss';
 import {Routes, Route} from 'react-router-dom';
@@ -10,7 +17,7 @@ const App: React.FC = () => {
             <Routes>
                 {routeList.map(
                     (
-                        route: {path: string; element: any},
+                        route: {path: string; element: React.ReactElement},
                         index: React.Key | null | undefined
                     ): JSX.Element => (
                         <Route
@@ -21,7 +28,6 @@ const App: React.FC = () => {
                     )
                 )}
             </Routes>
-            {/* <RedBlackTree /> */}
         </div>
     );
 };

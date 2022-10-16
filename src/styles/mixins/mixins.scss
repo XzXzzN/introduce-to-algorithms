@@ -1,7 +1,16 @@
 @import '../common/define.scss';
+// 名称
 @mixin n($block) {
     $B: $namespace + '-' + $block !global;
     .#{$B} {
         @content;
     }
+}
+
+// 省略号
+@mixin t($num) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $num;
+    overflow: hidden;
 }

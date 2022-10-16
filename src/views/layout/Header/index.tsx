@@ -1,11 +1,16 @@
+/*
+ * @Author: Xcracker
+ * @Date: 2022-10-13 22:36:54
+ * @LastEditors: Xcracker
+ * @LastEditTime: 2022-10-14 00:08:41
+ * @Descripttion: global header component
+ */
 import React from 'react';
-import './index.scss';
 
-const loginPath: string = `${window.location.href}/login`;
-
-const Footer = () => {
+const loginPath = `${window.location.origin}/login`;
+const Header = () => {
     return (
-        <nav className='header' id='topbar'>
+        <nav className='xc-header' id='topBar'>
             <span className='algorithms'>
                 XCRACKERS
                 <span className='web-path'>.com</span>
@@ -19,4 +24,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default Header;

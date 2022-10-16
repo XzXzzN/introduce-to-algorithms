@@ -1,0 +1,6 @@
+@import './mixins/mixins.scss';
+@include n(footer) {
+    position: relative;
+    height: 60px;
+    width: 100%;
+}

@@ -42,19 +42,22 @@ $--xc-white-rgb: 255, 255, 255;
 $--xc-black-rgb: 0, 0, 0;
 $--xc-body-color-rgb: 33, 37, 41;
 $--xc-body-bg-rgb: 255, 255, 255;
-$--xc-font-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto,
-	'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
-	'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-$--xc-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
-	'Courier New', monospace;
-$--xc-gradient: linear-gradient(
-	180deg,
-	rgba(255, 255, 255, 0.15),
-	rgba(255, 255, 255, 0)
-);
+$--xc-font-sans-serif: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$--xc-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+$--xc-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 $--xc-body-font-family: var($--xc-font-sans-serif);
 $--xc-body-font-size: 1rem;
 $--xc-body-font-weight: 400;
 $--xc-body-line-height: 1.5;
 $--xc-body-color: #212529;
 $--xc-body-bg: #fff;
+
+// 主题色数组
+$layoutTheme: $--xc-blue, $--xc-indigo, $--xc-purple, $--xc-pink, $--xc-red, $--xc-orange, $--xc-yellow, $--xc-green, $--xc-teal, $--xc-cyan,
+    $--xc-white, $--xc-gray;
+
+// 随机取主题色
+@function themeColor($list) {
+    @return nth($list, random(length($list)));
+}
