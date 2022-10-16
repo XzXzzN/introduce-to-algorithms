@@ -2,7 +2,7 @@
  * @Author: Xcracker
  * @Date: 2022-10-13 22:58:56
  * @LastEditors: Xcracker
- * @LastEditTime: 2022-10-17 01:40:55
+ * @LastEditTime: 2022-10-17 02:08:02
  * @Descripttion: 
 -->
 ## <font color="#C42E51">代码规范</font>
@@ -594,4 +594,6 @@
     Number(str);
     ```
 3. 建议使用 `xxx == null` 来判断 `null` 或 `undefined`。
+
+4. 建议定义数组对象时，对象中包含`key`字段。
 
