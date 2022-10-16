@@ -2,7 +2,7 @@
  * @Author: Xcracker
  * @Date: 2022-10-13 22:36:54
  * @LastEditors: Xcracker
- * @LastEditTime: 2022-10-17 01:43:16
+ * @LastEditTime: 2022-10-17 02:03:51
  * @Descripttion:
  */
 module.exports = {
@@ -88,6 +88,8 @@ module.exports = {
         // 禁止不必要的转义字符
         'no-useless-escape': 'error',
         // 禁用with
-        'no-with': 'error'
+        'no-with': 'error',
+        // 当个变量无需括号
+        'arrow-parens': ['error', 'as-needed']
     }
 };

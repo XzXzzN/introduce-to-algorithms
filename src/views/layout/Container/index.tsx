@@ -13,7 +13,7 @@ import {algorithmsMap} from '../../../utils/constant';
 const container = () => {
     return (
         <div className='xc-container'>
-            {algorithmsMap.map((list) => {
+            {algorithmsMap.map(list => {
                 return <Card {...list} />;
             })}
         </div>
