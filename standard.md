@@ -2,14 +2,21 @@
  * @Author: Xcracker
  * @Date: 2022-10-13 22:58:56
  * @LastEditors: Xcracker
- * @LastEditTime: 2022-10-17 23:56:25
+ * @LastEditTime: 2022-10-18 00:22:18
  * @Descripttion: 
 -->
 ## <font color="#C42E51">代码规范</font>
 - - -
+## [NODE版本16.13.1](https://nodejs.org/download/release/v16.13.1/)
+
+## NPM版本8.1.2
+    ```
+    npm install npm@8.1.2 -g
+    ```
+
 ## [SASS规范](https://guide.aotu.io/docs/css/sass.html)
 
-## JavaScript
+## JavaScript规范
 
 ### <font color="#C42E51">[强制]</font>
 
@@ -479,7 +486,7 @@
     ```
 25. 对于相等运算符，`==` 只能用于检查是否为 `null` 或者 `undefined`，其余情况必须使用 `===`。
     ``` JavaScript
-    // 正例
+    // Good
     if (age === 30) {
         // ...
     }
@@ -487,38 +494,38 @@
         // ...
     }
 
-    // 反例
+    // Bad
     if (age == 30) {
         // ......
     }
     ```
 26. 在使用 `parseInt` 时，必须传入第二个参数。
     ``` JavaScript
-    // 正例
+    // Good
     parseInt(str, 10);
 
-    // 反例
+    // Bad
     parseInt(str);
     ```
 27. 必须使用 `'` 而不是 `"` 定义字符串。
 
 28. 必须使用对象字面量 `{}` 来创建简单对象。
     ``` JavaScript
-    // 正例
+    // Good
     const obj = {};
 
-    // 反例
+    // Bad
     const obj = new Object();
     ```
 29. 如果一个对象字面量的所有属性都不需要引号，引号必须省略。如果需要加引号，须使用 `'` 而不是 `"`。
     ``` JavaScript
-    // 正例
+    // Good
     const info = {
         name: 'someone',
         age: 28
     };
 
-    // 反例
+    // Bad
     const info = {
         'name': 'someone',
         'age': 28
@@ -535,11 +542,11 @@
     ```
 31. 除非需要创建指定长度的数组，否则必须使用数组字面量 `[]` 创建数组。
     ``` JavaScript
-    // 正例
+    // Good
     const arr = [];
     const arr2 = new Array(1e4);
 
-    // 反例
+    // Bad
     const arr = new Array();
     ```
 32. 禁止使用 `for in`语句对数组进行遍历。
@@ -562,11 +569,11 @@
     ```
 34. 禁止出现多个空格
     ``` JavaScript
-    // 正例
+    // Good
     if (a === b) {
     }
 
-    // 反例
+    // Bad
     if (a  ===b) {
     }
     ```
@@ -575,23 +582,36 @@
 
 1. 建议使用 `+ ''` 将值转为字符串。
     ``` JavaScript
-    // 正例
+    // Good
     num + '';
 
-    // 反例
+    // Bad
     new String(num);
     num.toString();
     String(num);
     ```
 2.  建议使用 `+` 将值转为数值
     ``` JavaScript
-    // 正例
+    // Good
     +str;
 
-    // 反例
+    // Bad
     Number(str);
     ```
 3. 建议使用 `xxx == null` 来判断 `null` 或 `undefined`。
 
 4. 建议定义数组对象时，对象中包含`key`字段。
+
+5. 建议HTML标签内有三个以上的参数时进行分行操作。
+    ``` javascript
+    // Good
+    <Route
+        path={route.path}
+        key={route.key}
+        element={route.element}
+    />
+
+    // Bad
+    <Route path={route.path} key={route.key} element={route.element} />
+    ```
 
