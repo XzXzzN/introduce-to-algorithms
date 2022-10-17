@@ -2,7 +2,7 @@
  * @Author: Xcracker
  * @Date: 2022-10-13 22:36:54
  * @LastEditors: Xcracker
- * @LastEditTime: 2022-10-14 00:14:54
+ * @LastEditTime: 2022-10-17 02:11:58
  * @Descripttion:
  */
 import React from 'react';
@@ -17,12 +17,11 @@ const App: React.FC = () => {
             <Routes>
                 {routeList.map(
                     (
-                        route: {path: string; element: React.ReactElement},
-                        index: React.Key | null | undefined
+                        route: {path: string; element: React.ReactElement; key: string}
                     ): JSX.Element => (
                         <Route
                             path={route.path}
-                            key={index}
+                            key={route.key}
                             element={route.element}
                         />
                     )

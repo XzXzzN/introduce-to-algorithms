@@ -2,7 +2,7 @@
  * @Author: Xcracker
  * @Date: 2022-10-13 22:58:56
  * @LastEditors: Xcracker
- * @LastEditTime: 2022-10-17 02:08:02
+ * @LastEditTime: 2022-10-17 23:56:25
  * @Descripttion: 
 -->
 ## <font color="#C42E51">代码规范</font>
@@ -317,10 +317,8 @@
         , callback
     );
     ```
-19.  如果只有一行，`{}` 不能被省略。
+19. 如果只有一行，`{}` 不能被省略。
     ``` JavaScript
-    /*eslint curly: "error"*/
-
     // Good
     if (foo) {
         foo++;
@@ -456,7 +454,7 @@
 
     var { foo: bar_baz = 1 } = quz;
     ```
-23.  `class`类的命名必须遵循 UpperCamelCase (Pascal)，即大骆驼拼写法
+23. `class`类的命名必须遵循 UpperCamelCase (Pascal)，即大骆驼拼写法。
     ``` JavaScript
     // Good
     var friend = new Person();
@@ -464,7 +462,7 @@
     // Bad
     var friend = new person();
     ```
-24.  优先使用`const`声明变量，且一行不能同时声明多个变量。
+24. 优先使用`const`声明变量，且一行不能同时声明多个变量。
     ``` JavaScript
 
     // Good
