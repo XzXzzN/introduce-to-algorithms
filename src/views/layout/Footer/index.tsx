@@ -3,7 +3,7 @@
  * @Author: Xcracker
  * @Date: 2022-10-13 22:36:54
  * @LastEditors: Xcracker
- * @LastEditTime: 2022-10-18 22:58:06
+ * @LastEditTime: 2022-10-18 23:27:40
  */
 import React from 'react';
 
@@ -14,6 +14,7 @@ const Footer = () => {
     console.log(bcd);
     const aaa = 0;
     aaa = 1;
+    console.log(DefaultDeserializerd);
     return (
         <nav className='xc-footer' id='bottomBar'>
             <span className='algorithms'>

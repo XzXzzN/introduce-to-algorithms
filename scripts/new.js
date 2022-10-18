@@ -48,6 +48,8 @@ const files = [
     }
 ];
 
+console.log(files);
+
 /* if (let i = 0; i < files.length; ++i) {
     const obj = {
         new: () => {

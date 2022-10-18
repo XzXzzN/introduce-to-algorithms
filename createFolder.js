@@ -1,3 +1,10 @@
+/*
+ * @Author: Xcracker
+ * @Date: 2022-10-17 01:57:46
+ * @LastEditors: Xcracker
+ * @LastEditTime: 2022-10-18 23:06:32
+ * @Descripttion:
+ */
 const fs = require('fs');
 
 const readline = require('readline').createInterface({
@@ -6,7 +13,7 @@ const readline = require('readline').createInterface({
 });
 
 let folderPath = '';
-let createType = 'F';
+// let createType = 'F';
 
 readline.question(`please input the folder name you need create: `, path => {
     folderPath = path;

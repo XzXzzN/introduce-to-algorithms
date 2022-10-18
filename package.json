@@ -33,6 +33,7 @@
     "file-loader": "^6.2.0",
     "fs-extra": "^10.0.0",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^4.3.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.4.3",
     "jest-resolve": "^27.4.2",
@@ -74,19 +75,18 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "lint": "eslint src --fix",
-    "lint-staged": "lint-staged --allow-empty",
-    "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx ",
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
     "prepare": "husky install"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "echo \"[Husky] pre-commit\""
     }
   },
   "lint-staged": {
-    "**/*.{js,jsx,tsx,ts,scss,md,json}": [
-      "eslint src --fix"
+    "*.{js,jsx,tsx,ts,scss,md,json}": [
+      "npm run lint",
+      "git add"
     ]
   },
   "eslintConfig": {
@@ -108,12 +108,13 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
     "@typescript-eslint/eslint-plugin": "^5.18.0",
     "@typescript-eslint/parser": "^5.18.0",
     "babel-eslint": "^10.1.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.29.4",
-    "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
   },
