@@ -78,9 +78,15 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint",
+      "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "lint-staged": {
+    "*.{js,jsx,tsx,ts,less,md,json}": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -108,7 +114,7 @@
     "babel-eslint": "^10.1.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.29.4",
-    "husky": "^4.3.0",
+    "husky": "^4.3.8",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
   },
