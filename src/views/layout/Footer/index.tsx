@@ -10,8 +10,6 @@ import React from 'react';
 const loginPath: string = `${window.location.href}/login`;
 
 const Footer = () => {
-    console.log(abc);
-    console.log(DefaultDeserializerd);
     return (
         <nav className='xc-footer' id='bottomBar'>
             <span className='algorithms'>
