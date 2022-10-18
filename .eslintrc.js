@@ -2,7 +2,7 @@
  * @Author: Xcracker
  * @Date: 2022-10-13 22:36:54
  * @LastEditors: Xcracker
- * @LastEditTime: 2022-10-18 00:40:37
+ * @LastEditTime: 2022-10-19 01:04:58
  * @Descripttion:
  */
 module.exports = {
@@ -18,6 +18,11 @@ module.exports = {
         },
         ecmaVersion: 'latest',
         sourceType: 'module'
+    },
+    settings: {
+        react: {
+            version: 'detect'
+        }
     },
     plugins: ['react', '@typescript-eslint'],
     rules: {

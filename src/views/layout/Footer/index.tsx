@@ -3,7 +3,7 @@
  * @Author: Xcracker
  * @Date: 2022-10-13 22:36:54
  * @LastEditors: Xcracker
- * @LastEditTime: 2022-10-18 23:27:40
+ * @LastEditTime: 2022-10-19 01:05:34
  */
 import React from 'react';
 
@@ -11,9 +11,6 @@ const loginPath: string = `${window.location.href}/login`;
 
 const Footer = () => {
     console.log(abc);
-    console.log(bcd);
-    const aaa = 0;
-    aaa = 1;
     console.log(DefaultDeserializerd);
     return (
         <nav className='xc-footer' id='bottomBar'>
