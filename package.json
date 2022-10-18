@@ -74,7 +74,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "lint": "eslint --fix",
+    "lint": "eslint --fix src/**/*",
     "prepare": "husky install"
   },
   "husky": {
@@ -84,9 +84,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,tsx,ts,less,md,json}": [
-      "npm run lint",
-      "git add"
+    "*.{js,jsx,tsx,ts,less,md}": [
+      "npm run lint"
     ]
   },
   "eslintConfig": {
