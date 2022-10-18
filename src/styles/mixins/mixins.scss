@@ -13,4 +13,29 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: $num;
     overflow: hidden;
+    @content;
+}
+
+// flex 布局
+@mixin flex-layout(
+    $display: flex,
+    $flex-direction: column,
+    $flex-wrap: wrap,
+    $justify-content: space-between,
+    $align-items: center,
+    $align-content: flex-start
+) {
+    display: $display;
+    flex-flow: $flex-direction $flex-wrap;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    align-content: $align-content;
+    flex-direction: $flex-direction;
+    @content;
+}
+
+// grid 布局
+@mixin grid-layout($column: repeat(auto-fill, 100px)) {
+    display: grid;
+    grid-template-columns: $column;
 }

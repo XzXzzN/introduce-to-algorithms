@@ -2,7 +2,7 @@
  * @Author: Xcracker
  * @Date: 2022-10-13 22:36:54
  * @LastEditors: Xcracker
- * @LastEditTime: 2022-10-17 02:03:51
+ * @LastEditTime: 2022-10-18 00:40:37
  * @Descripttion:
  */
 module.exports = {
@@ -89,7 +89,7 @@ module.exports = {
         'no-useless-escape': 'error',
         // 禁用with
         'no-with': 'error',
-        // 当个变量无需括号
+        // 单个变量无需括号
         'arrow-parens': ['error', 'as-needed']
     }
 };
