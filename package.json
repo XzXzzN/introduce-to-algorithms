@@ -80,13 +80,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo \"[Husky] pre-commit\""
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "*.{js,jsx,tsx,ts,scss,md,json}": [
-      "npm run lint",
-      "git add"
+    "src/**/*.{js,ts,tsx,vue}": [
+      "eslint ./src  --ext .js,.tsx,.ts --cache --fix",
+      "git add ."
     ]
   },
   "eslintConfig": {
