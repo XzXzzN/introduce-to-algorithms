@@ -74,19 +74,13 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "lint": "eslint --fix",
-    "prepare": "husky install"
+    "lint": "eslint --fix"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo \"[Husky] pre-commit\"",
+      "pre-commit": "npm run lint",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
-  },
-  "lint-staged": {
-    "*.{jsx,tsx,ts,scss,md,json}": [
-      "npm run lint"
-    ]
   },
   "eslintConfig": {
     "extends": [
