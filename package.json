@@ -76,7 +76,8 @@
     "test": "node scripts/test.js",
     "lint": "eslint src --fix",
     "lint-staged": "lint-staged --allow-empty",
-    "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx "
+    "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx ",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
