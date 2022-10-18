@@ -74,7 +74,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "lint": "eslint --fix"
+    "lint": "eslint --fix",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
@@ -84,7 +85,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,tsx,ts,less,md,json}": [
-      "eslint --fix",
+      "npm run lint",
       "git add"
     ]
   },
@@ -114,9 +115,10 @@
     "babel-eslint": "^10.1.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.29.4",
-    "husky": "^4.3.8",
+    "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "stylelint": "^14.14.0"
   },
   "jest": {
     "roots": [
