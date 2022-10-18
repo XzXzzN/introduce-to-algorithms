@@ -85,7 +85,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,tsx,ts,scss,md}": [
-      "npm run lint"
+      "npm run lint",
+      "git add ."
     ]
   },
   "eslintConfig": {
