@@ -2,7 +2,7 @@
  * @Author: Xcracker
  * @Date: 2022-10-13 22:58:56
  * @LastEditors: Xcracker
- * @LastEditTime: 2022-10-18 00:22:18
+ * @LastEditTime: 2022-10-19 23:05:55
  * @Descripttion: 
 -->
 ## <font color="#C42E51">代码规范</font>
@@ -600,9 +600,7 @@
     ```
 3. 建议使用 `xxx == null` 来判断 `null` 或 `undefined`。
 
-4. 建议定义数组对象时，对象中包含`key`字段。
-
-5. 建议HTML标签内有三个以上的参数时进行分行操作。
+4. 建议HTML标签内有三个以上的参数时进行分行操作。
     ``` javascript
     // Good
     <Route

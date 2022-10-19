@@ -2,7 +2,7 @@
  * @Author: Xcracker
  * @Date: 2022-10-13 22:36:54
  * @LastEditors: Xcracker
- * @LastEditTime: 2022-10-19 01:04:58
+ * @LastEditTime: 2022-10-19 23:21:40
  * @Descripttion:
  */
 module.exports = {
@@ -95,6 +95,8 @@ module.exports = {
         // 禁用with
         'no-with': 'error',
         // 单个变量无需括号
-        'arrow-parens': ['error', 'as-needed']
+        'arrow-parens': ['error', 'as-needed'],
+        // jsx 使用单引号
+        'jsx-quotes': ['error', 'prefer-single']
     }
 };
