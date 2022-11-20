@@ -328,7 +328,8 @@ module.exports = function(webpackEnv) {
                     'react-dom$': 'react-dom/profiling',
                     'scheduler/tracing': 'scheduler/tracing-profiling'
                 }),
-                ... (modules.webpackAliases || {})
+                ... (modules.webpackAliases || {}),
+                '@': path.resolve('src')
             },
             plugins: [
                 // Prevents users from importing files from outside of src/ (or node_modules/).

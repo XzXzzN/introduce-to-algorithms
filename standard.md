@@ -2,7 +2,7 @@
  * @Author: Xcracker
  * @Date: 2022-10-13 22:58:56
  * @LastEditors: Xcracker
- * @LastEditTime: 2022-10-19 23:05:55
+ * @LastEditTime: 2022-11-07 23:38:52
  * @Descripttion: 
 -->
 ## <font color="#C42E51">代码规范</font>
@@ -10,9 +10,9 @@
 ## [NODE版本16.13.1](https://nodejs.org/download/release/v16.13.1/)
 
 ## NPM版本8.1.2
-    ```
-    npm install npm@8.1.2 -g
-    ```
+```
+npm install npm@8.1.2 -g
+```
 
 ## [SASS规范](https://guide.aotu.io/docs/css/sass.html)
 
