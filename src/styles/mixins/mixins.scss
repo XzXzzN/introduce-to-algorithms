@@ -8,8 +8,8 @@
 }
 
 // 省略号
-@mixin t($num) {
-    display: -webkit-box;
+@mixin t($num, $display: -webkit-box) {
+    display: $display;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: $num;
     overflow: hidden;
@@ -35,7 +35,14 @@
 }
 
 // grid 布局
-@mixin grid-layout($column: repeat(auto-fill, 100px)) {
+@mixin grid-layout(
+    $column: repeat(auto-fill, 100px),
+    $row: repeat(auto-fill, 100px),
+    $gap: 20px
+) {
     display: grid;
     grid-template-columns: $column;
+    grid-template-rows: $row;
+    grid-gap: $gap;
+    @content;
 }
