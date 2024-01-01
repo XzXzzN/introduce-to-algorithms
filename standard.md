@@ -2,7 +2,7 @@
  * @Author: Xcracker
  * @Date: 2022-10-13 22:58:56
  * @LastEditors: Xcracker
- * @LastEditTime: 2022-11-07 23:38:52
+ * @LastEditTime: 2024-01-01 21:59:37
  * @Descripttion: 
 -->
 ## <font color="#C42E51">代码规范</font>
@@ -10,7 +10,7 @@
 ## [NODE版本16.13.1](https://nodejs.org/download/release/v16.13.1/)
 
 ## NPM版本8.1.2
-```
+``` shell
 npm install npm@8.1.2 -g
 ```
 
